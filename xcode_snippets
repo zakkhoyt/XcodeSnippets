@@ -1,0 +1,27 @@
+
+# This script will configure Xcode to look for code snippets on your iCloud Drive
+# FYI:
+# Code snippets are stored here
+# ~/Library/Developer/Xcode/UserData
+# iCloud drive documents folder is here
+# ~/Library/Mobile Documents/com~apple~CloudDocs/Documents/
+#
+# Let's get busy. 
+
+# Move to Xcode settings directory
+cd ~/Library/Developer/Xcode/UserData
+
+# Back up (rename) the CodeSnippets folder
+mv CodeSnippets/ CodeSnippets_bak
+
+# Create new CodeSnippets folder on iCloud
+mkdir ~/Library/Mobile Documents/com~apple~CloudDocs/Documents/CodeSnippets
+
+# Make a link to iCloud/Documents/CodeSnippets
+ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets/ CodeSnippets
+
+# copy original snippets 
+cp CodeSnippets_bak/* CodeSnippets/
+
+
+
