@@ -9,22 +9,31 @@
 # Let's get busy. 
 
 # Move to Xcode settings directory
+echo Moving to Xcode dir
 cd ~/Library/Developer/Xcode/UserData
 
 # Back up (rename) the CodeSnippets folder
+echo Backing up CodeSnippets
 mv CodeSnippets/ CodeSnippets_bak
 
 # Create new CodeSnippets folder on iCloud
+echo Configuring iCloud
 mkdir ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets
 
 # Make a link to iCloud/Documents/CodeSnippets
+echo Linking
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets/ CodeSnippets
 
 # Copy original snippets 
+echo Copying pre-existing code snippets
 cp CodeSnippets_bak/* CodeSnippets/
 
 # Refresh dir. Try touch to see if that will pull down icloud docs. Shell to finder for the same reason.
+echo Refreshing iCloud
 cd CodeSnippets
 touch *
 open .
+
+echo Done
+
 
