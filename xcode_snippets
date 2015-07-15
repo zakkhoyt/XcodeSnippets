@@ -20,8 +20,11 @@ mkdir ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets
 # Make a link to iCloud/Documents/CodeSnippets
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets/ CodeSnippets
 
-# copy original snippets 
+# Copy original snippets 
 cp CodeSnippets_bak/* CodeSnippets/
 
-
+# Refresh dir. Try touch to see if that will pull down icloud docs. Shell to finder for the same reason.
+cd CodeSnippets
+touch *
+open .
 
