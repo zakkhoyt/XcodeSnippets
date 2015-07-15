@@ -4,7 +4,7 @@
 # Code snippets are stored here
 # ~/Library/Developer/Xcode/UserData
 # iCloud drive documents folder is here
-# ~/Library/Mobile Documents/com~apple~CloudDocs/Documents/
+# ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/
 #
 # Let's get busy. 
 
@@ -15,7 +15,7 @@ cd ~/Library/Developer/Xcode/UserData
 mv CodeSnippets/ CodeSnippets_bak
 
 # Create new CodeSnippets folder on iCloud
-mkdir ~/Library/Mobile Documents/com~apple~CloudDocs/Documents/CodeSnippets
+mkdir ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets
 
 # Make a link to iCloud/Documents/CodeSnippets
 ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/CodeSnippets/ CodeSnippets
